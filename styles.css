@@ -1,0 +1,348 @@
+/*   CSS STYLING   */
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+    text-overflow: hidden;
+    
+    all: none;
+}
+
+body
+{
+    background-color: hsl(224, 28%, 35%);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.sub-container
+{
+    width: 500px;
+}
+
+.head
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    padding: 20px;
+    padding-bottom: 10px;
+
+}
+
+.calc
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.theme
+{
+    font-size: 0.7rem;
+    font-weight: 400;
+
+    justify-content: right;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.theme-text
+{
+    padding-right: 20px;
+    color: white;
+}
+
+.input-box > input
+{
+    font-size: 2rem;
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding: 25px;
+
+    background-color: hsl(224, 36%, 15%) ;
+
+    border: 0px;
+    border-radius: 10px;
+
+    color: white;
+}
+
+.numbers
+{
+    background-color: hsla(223, 31%, 20%, 0.932);
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+button
+{
+    background-color: rgb(210, 204, 204);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    text-align: center;
+
+    margin: 10px;
+
+    width: 90px;
+    height: 45px;
+
+    font-size: 30px;
+
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 0px hsl(220, 1%, 43%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+button:hover
+{
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgb(170, 167, 167);
+}
+
+.last-table
+{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.last-button
+{
+    width: 200px;
+}
+
+.del , .reset
+{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+}
+
+.equal-to
+{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 4px 0px hsl(6, 70%, 34%);
+}
+
+/*   light theme styling   */
+
+body.light
+{
+    background-color: hsl(0, 0%, 90%)
+}
+
+.light .calc
+{
+    color: black;
+}
+
+.light .theme-text
+{
+    color: black;
+}
+
+.light .ball
+{
+    background-color: salmon;
+}
+
+.light .input-box > input
+{
+   background-color: white;
+   color: black;
+}
+
+.light .numbers
+{
+    background-color:  hsl(0, 5%, 81%);
+}
+
+.light button
+{
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: hsl(35, 11%, 61%);
+}
+
+.light .del
+{
+    background-color:  hsl(185, 42%, 37%);
+    box-shadow: 0px 4px 0px hsl(185, 58%, 25%);
+}
+
+.light .reset
+{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 4px 0px hsl(185, 58%, 25%);
+}
+
+.light .equal-to
+{
+    background-color:  hsl(25, 98%, 40%);
+    box-shadow: 0px 4px 0px hsl(25, 99%, 27%);
+}
+
+
+
+
+
+
+
+/*   RESPONSIVE STYLING   */
+
+@media only screen and (max-width: 500px)
+
+{
+
+    .sub-container
+    {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .head
+    {
+        width: 100%;
+    }
+
+    .input-box 
+    {
+        width: 100%;
+    }
+
+    .input-box > input
+    {
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+    
+    .numbers
+    {
+        width: 100%;
+
+        padding: 10px;
+
+        text-align: center;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    button
+    {
+        width: 60px;
+
+        font-size: 1rem;
+    }
+
+    .last-button
+    {
+        width: 100px;
+    }
+}
+
+
+
+/*   TOGGLE THEME STYLING   */
+
+
+.label
+{
+
+    border-radius: 20px;
+    background-color: hsla(223, 31%, 20%, 0.932);
+
+    margin-right: 10px;
+    padding: 5px;
+
+    width: 50px;
+    height: 30px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.fa-moon
+{
+    color: rgb(19, 165, 243);
+}
+
+.fa-sun
+{
+    color: rgb(255, 157, 0);
+}
+
+.checkbox
+{
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox:checked + .label .ball
+{
+    transform: translateX(24px);
+}
+
+.ball
+{
+    background-color: white;
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+
+    border-radius: 100%;
+    transition: .3s linear;
+}
+
+
+

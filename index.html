@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://kit.fontawesome.com/9d3faebd6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="sub-container">
+
+        <div class="head">
+            <span class="calc">
+                calc
+            </span>
+
+            <div class="theme">
+
+              <div class="theme-text">
+                THEME
+              </div>             
+               <div class="toggler">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="input-box">
+            <input type="text" name="screen" class="screen" id="screen">
+        </div>
+
+        <div class="numbers">
+            <table>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button class="del">DEL</button></td>
+                </tr>
+    
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>+</button></td>
+                </tr>
+    
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>-</button></td>
+                </tr>
+    
+                <tr>
+                    <td><button>.</button></td>
+                    <td><button>0</button></td>
+                    <td><button>/</button></td>
+                    <td><button>x</button></td>
+                </tr>
+            </table>
+    
+            <table class="last-table numbers">
+                <tr>
+                    <td><button class="last-button reset">RESET</button></td>
+                    <td><button class="last-button equal-to">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
