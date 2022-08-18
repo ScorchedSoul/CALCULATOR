@@ -32,7 +32,10 @@ for(item of buttons)
 
         else if (buttonText == '=')
         {
-            screen.value = eval(screenValue);
+            if (!screenValue == '')
+            {
+                screen.value = eval(screenValue);
+            }
         }
 
         else {
