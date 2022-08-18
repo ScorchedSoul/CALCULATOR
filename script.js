@@ -26,8 +26,11 @@ for(item of buttons)
 
         else if (buttonText == 'DEL')
         {
+            if (!screenValue == '')
+            {
             screen.value = screen.value.slice(0 , -1) ;
             screenValue = screenValue.slice(0,-1);
+            }
         }
 
         else if (buttonText == '=')
